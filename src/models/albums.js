@@ -21,7 +21,7 @@ module.exports = (sequelize, DataTypes) => {
     img: {
       type: DataTypes.STRING,
       allowNull: true,
-      defaultValue: null,
+      defaultValue: null
     },
     artist_id: DataTypes.STRING,
     release_date: DataTypes.INTEGER,
