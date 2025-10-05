@@ -24,7 +24,7 @@ module.exports = (sequelize, DataTypes) => {
       defaultValue: null,
     },
     artist_id: DataTypes.STRING,
-    release_date: DataTypes.INTEGER
+    release_date: DataTypes.INTEGER,
   }, {
     sequelize,
     modelName: 'Albums',
