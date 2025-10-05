@@ -167,14 +167,12 @@ let putAlbum = async (req, res) => {
     return res.redirect('/display-allalbum');
 }
 
-
 let deteleAlbum = async (req, res) => {
     let id = req.query.id;
     await ALBUMService.deteleAlbum(id);
     return res.redirect('/display-allalbum');
 }
 
-//Song zone
 let displayAllSong = async (req, res) => {
     let songs = await SONGService.getAllSongs();
     return res.render('displayAllSong.ejs', { dataTable: songs });
